@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+$value = 8;
+$valref = \$value;
+
+print "value is $value\n \$valref = $valref\n \$\$valref = $$valref\n";
+
+@value = (1..6);
+$valref = \@value;
+print "value is @value\n \$valref = $valref\n \@\$valref = @$valref\n";
